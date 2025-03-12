@@ -50,6 +50,7 @@ build/
 *.egg
 
 *.swn
+*.swm
 
 file
 file.pub
