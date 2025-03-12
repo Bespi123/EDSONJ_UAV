@@ -49,5 +49,7 @@ build/
 *.egg-info/
 *.egg
 
+*.swn
+
 file
 file.pub
