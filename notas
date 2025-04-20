@@ -1,0 +1,29 @@
+Instrucciones de uso
+	- 1ro: abrir funciones.py y actualizar los ttyUSB de VN300 y PL2303
+	- 2do: abrir probettyUSB.py para comprobar ttyUSB configurado en funciones.py
+	- 2do: abrir sendComands.py
+	- 3ro: ejectuar EdsonJ.py
+
+
+Detalles de los script
+
+EdsonJ.py: 
+
+	- Lee ttyUSB0 y ttyUSB1
+	- Lee constantemente el ultimo caracter de log.txt (sendComands.py)
+	- Contiene modo manual, maniobras zigzag y control H inf
+		- Genera las cadenas de caracteres que son enviadas a Arduino por ttyUSB de PL2303 para actuadores
+	- Almacena en la base de datos los datos de VN300 y de los motores
+
+
+
+sendComands.py:
+	- crea un log.txt donde guarda las instrucciones enviadas
+	- se utiliza como control remoto, pide comando para operar el vehiculo
+	- cuando se cierra el programa con control+c se envia automaticamente instruccion de break
+
+funciones.py:
+	- Funciones de script EdsonJ.py.
+
+MySqlCreateTableEdsonJ.py:
+	- Crea tabla para almacenar datos de EdsonJ.py (VN300, Motores, tiempo)
