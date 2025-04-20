@@ -19,7 +19,7 @@ slprj/
 sfunctbl/
 *_autosave.slx
 *.autosave
-slx.*
+*.slx.*
 
 # MATLAB code generation files
 codegen/
