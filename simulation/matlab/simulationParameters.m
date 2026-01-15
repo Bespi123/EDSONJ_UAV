@@ -43,21 +43,21 @@ N_rnc   = -2.8549;      % kg·m² - propeller coefficient
 N_ncnd  = -1.5777;      % kg·m² - propeller coefficient
 N_vnc   = -0.5382;      % kg·m - propeller coefficient
 
-% % % % M = [m-X_u_dot,         0,                 0;
-% % % %              0, m-Y_v_dot,     m*x_g-Y_r_dot;
-% % % %              0, m*x_g-N_v_dot,   I_z-N_r_dot];
-% % % % 
-% % % % M = reshape(M', 1, []);  % Transpone y reorganiza como vector fila
-% % % % 
-% % % % % C = [        0,      -m, -m*x_g+Y_v_dot*+Y_r_dot;
-% % % % %              m,       0, -X_u_dot;
-% % % % %            m*x_g-Y_v_dot-Y_r_dot, X_u_dot, 0];
-% % % % % C = reshape(C', 1, []);  % Transpone y reorganiza como vector fila
-% % % % 
-% % % % D = [X_u+X_uu,                  0, 0;
-% % % %                    0, Y_v+Y_vv, 0;
-% % % %                    0,                  0, N_r+N_rr];
-% % % % D = reshape(D', 1, []);  % Transpone y reorganiza como vector fila
+% % % M = [m-X_u_dot,         0,                 0;
+% % %              0, m-Y_v_dot,     m*x_g-Y_r_dot;
+% % %              0, m*x_g-N_v_dot,   I_z-N_r_dot];
+% % %  
+% % % M = reshape(M', 1, []);  % Transpone y reorganiza como vector fila
+% % %  
+% % % C = [        0,      -m, -m*x_g+Y_v_dot*+Y_r_dot;
+% % %               m,       0, -X_u_dot;
+% % %             m*x_g-Y_v_dot-Y_r_dot, X_u_dot, 0];
+% % % C = reshape(C', 1, []);  % Transpone y reorganiza como vector fila
+% % % 
+% % % D = [X_u+X_uu,                  0, 0;
+% % %                    0, Y_v+Y_vv, 0;
+% % %                    0,                  0, N_r+N_rr];
+% % % D = reshape(D', 1, []);  % Transpone y reorganiza como vector fila
 % % % 
 % % % 
 % % % M = [ 1.1274   0        0;
